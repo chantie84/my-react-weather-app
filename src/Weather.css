@@ -4,6 +4,11 @@
   padding: 16px;
   border-radius: 4px;
   color: rgb(135, 135, 135);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url("./image/lente.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
 }
 
 .Weather h1 {
@@ -23,14 +28,14 @@
   list-style: none;
 }
 
-.Weather img {
+.Weather canvas {
   margin-top: 5px;
   margin-right: 10px;
   display: inline-block;
 }
 
 .Weather .temperature {
-  color: rgb(33, 33, 33);
+  color: white;
   font-size: 64px;
   font-weight: 400;
   line-height: 64px;
@@ -42,4 +47,10 @@
   line-height: 1;
   top: -32px;
   margin-left: 5px;
+}
+
+@media (max-width: 600px) {
+  .Weather .temperature {
+    font-size: 32px;
+  }
 }

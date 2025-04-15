@@ -9,6 +9,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+  max-width: 100%;
 }
 
 .Weather h1 {
